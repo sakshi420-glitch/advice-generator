@@ -1,0 +1,70 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: hsl(218, 23%, 16%);
+    color: hsl(193, 38%, 86%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: hsl(217, 19%, 24%);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+}
+
+.advice-number {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: hsl(150, 100%, 66%);
+    margin-bottom: 1rem;
+}
+
+.advice-text {
+    font-size: 28px;
+    font-weight: 800;
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+
+.dice-button {
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.dice-button:hover {
+    background-color: hsl(150, 100%, 70%);
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .advice-text {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 500px;
+    }
+}
